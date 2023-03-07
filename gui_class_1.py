@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'design_1.ui'
@@ -162,17 +161,10 @@ class Ui_MainWindow(object):
         msg.exec_()
 
     def submit_clicked(self):
-        print(self.get_csv_file())
-        print(self.get_img_dir())
-        print(self.get_kml_ip())
-        print(self.get_c1_lat())
-        print(self.get_c1_lon())
-        print(self.get_c2_lat())
-        print(self.get_c2_lon())
+       
 
         if(self.get_csv_file() == ""
            or self.get_img_dir() == ""
-           or self.get_kml_ip() == ""
            or self.get_c1_lat() == ""
            or self.get_c1_lon() == ""
            or self.get_c2_lat() == ""
@@ -180,6 +172,15 @@ class Ui_MainWindow(object):
            ):
             self.show_popup()
         else:
+            print("csv file  : "+self.get_csv_file())
+            print("image dir : "+self.get_img_dir())
+            print("kml file  : "+self.get_kml_ip())
+            print("c1-> lat  : "+self.get_c1_lat())
+            print("c1-> lon  : "+self.get_c1_lon())
+            print("c2-> lat  : "+self.get_c2_lat())
+            print("c2-> lon  : "+self.get_c2_lon())
+            print("------------------------------")
+
             obj1 = algo.Isolate_img(
                 self.get_csv_file(),
                 self.get_img_dir(),
@@ -192,7 +193,6 @@ class Ui_MainWindow(object):
             del obj1
             self.clear_all_fields()
 
-        print("------------------------------")
 
 
 if __name__ == "__main__":

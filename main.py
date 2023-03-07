@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 
 import gui_class_1
 import sys
