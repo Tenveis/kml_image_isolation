@@ -23,6 +23,9 @@
       <height>25</height>
      </rect>
     </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
    </widget>
    <widget class="QLabel" name="csv_ip_label">
     <property name="geometry">
@@ -33,8 +36,17 @@
       <height>17</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
-     <string>CSV_INPUT</string>
+     <string>Csv Input</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="img_dir_label">
@@ -42,12 +54,21 @@
      <rect>
       <x>140</x>
       <y>200</y>
-      <width>71</width>
+      <width>111</width>
       <height>17</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
-     <string>IMG_dir</string>
+     <string>Img directory</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="img_dir_line">
@@ -69,8 +90,17 @@
       <height>17</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
-     <string>Coordinate-1</string>
+     <string>Coordinate 1</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="c1_lat_line">
@@ -128,11 +158,26 @@
       <height>17</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="text">
-     <string>Coordinate-2</string>
+     <string>Coordinate 2</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="kml_dir_label">
+   <widget class="QLabel" name="kml_ip_label">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -141,11 +186,20 @@
       <height>17</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
-     <string>Kml_dir</string>
+     <string>Kml Input</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLineEdit" name="kml_dir_line">
+   <widget class="QLineEdit" name="kml_ip_line">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -163,6 +217,12 @@
       <width>171</width>
       <height>71</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="text">
      <string>SUBMIT</string>

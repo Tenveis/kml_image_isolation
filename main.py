@@ -1,12 +1,12 @@
 
-import gui_class_1
+import gui_class_2
 import sys
 
 
 if __name__ == "__main__":
-    app = gui_class_1.QtWidgets.QApplication(sys.argv)
-    MainWindow = gui_class_1.QtWidgets.QMainWindow()
-    ui = gui_class_1.Ui_MainWindow()
+    app = gui_class_2.QtWidgets.QApplication(sys.argv)
+    MainWindow = gui_class_2.QtWidgets.QMainWindow()
+    ui = gui_class_2.Ui_MainWindow()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())

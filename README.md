@@ -1,3 +1,3 @@
-pip instll pyqt5
-pip instll pyqt5-tools
+pip install pyqt5
+pip install pyqt5-tools
 pip install pyinstaller
